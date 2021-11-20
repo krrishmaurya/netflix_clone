@@ -1,0 +1,467 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: rgb(47, 47, 47);
+}
+
+.home{
+    background: linear-gradient(rgba(0, 0, 0, 0.99),rgba(29, 29, 29, 0.5),rgba(29, 29, 29, 0.99)),url(../images/background1.jpg);
+    background-size: cover;
+    height: 40vw;
+}
+
+#home-1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1%;
+}
+
+#home-1 img{
+    max-width: 20%;
+}
+
+#home-1 div select{
+    font-size: 1vw;
+    background: black;
+    color: white;
+    padding:5px;
+}
+
+#home-1 div{
+    text-align: right;
+    padding-right: 10vw;
+}
+
+#home-1 div a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: white;
+    background: red;
+    border-radius: 2px;
+    margin-left: 1vw;
+}
+
+#home-2{
+    color: white;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+#home-2 h1, #home-2 h2, #home-2 h4, #home-2 form{
+    margin: 3%;
+}
+
+#home-2 h1{
+    font-size: 3vw;
+}
+
+#home-2 h2{
+    font-size: 2vw;
+}
+
+#home-2 h4{
+    font-size: 1vw;
+}
+
+
+#home-2 form{
+    background: white;
+    height: 2vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+#home-2 form input, #home-2 button{
+    font-size: 1.5vw;
+    height: 4vw;
+    border: none;
+    color: white;
+}
+
+#home-2 form input{
+    
+}
+
+
+#home-2 form button{
+   background: rgb(195, 4, 4);
+}
+
+
+#home-2 form button:hover{
+    background: red;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:950px){
+
+    #home-2 h1,  #home-2 form{
+        font-size: 3vw;
+    }
+
+    #home-2 h2{
+        font-size: 2.3vw;
+    }
+
+    #home-2 h4{
+        font-size: 1.8vw;
+    }
+
+    #home-2 form{
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 1vw;
+        
+    }
+
+    #home-2 form button{
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.intro-1{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 26vw;
+}
+
+.intro-2{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: grid;
+    background: black;
+    color:white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 26vw;
+}
+
+.intro-1-text{
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+
+.intro-2-text{
+    padding: 1%;
+    width: 50%;
+    margin-left: 0;
+    margin-top: 10%;
+}
+
+.intro-1-text h1, .intro-2-text h1{
+    font-size: 3vw;
+}
+
+.intro-1-text h3, .intro-2-text h3{
+    font-size: 1.5vw;
+}
+
+
+#intro-1-graphic-bg-1{
+    background:url(../images/tv.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+}
+
+#vid{
+    height:50%;
+    width: 50%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+
+
+#intro-2-graphic-bg-2{
+    background: url(../images/mobile-0819.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70% 100%;
+}
+
+#intro-1-graphic-bg-3{
+    background:url(../images/device-pile-in.png);
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+}
+
+#intro-2-graphic-bg-4{
+    background: url(../images/children.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70% 100%;
+}
+
+@media screen and (max-width:950px){
+    .intro-1{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 15vw 30vw;
+    }
+
+    .intro-2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 15vw 30vw;
+        grid-template-areas:"image"
+                            "text";
+    }
+
+    .intro-1-text , .intro-2-text{
+        text-align: center;
+        width: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+    .intro-1-text h1, .intro-2-text h1{
+        font-size: 5vw;
+    }
+
+    .intro-1-text h3,.intro-2-text h3 {
+        font-size: 3vw;
+    }
+
+    #intro-1-graphic-bg-1, #intro-2-graphic-bg-2, #intro-1-graphic-bg-3, #intro-2-graphic-bg-4{
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #vid{
+        width: 60%;
+        margin-left: 25%;
+        margin-bottom: 2%;
+    }
+
+    #intro-graphic-bg-2:nth-child(1){
+        grid-area: image;
+    }
+
+    .intro-2 .intro-2-text:nth-child(2){
+        grid-area: text;
+    }
+
+}
+
+
+
+.faq-section{
+    color: white;
+    background: black;
+    margin-top: 1%;
+    padding: 2%;
+    height: 50vw;
+}
+
+
+.faq-section h1{
+    text-align: center;
+    font-size:2.5vw;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+
+.faq-section ul{
+    font-size: 1.5vw;
+    list-style: none;
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.faq-section ul li{
+    background: rgb(49, 49, 49);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.faq-section div{
+    margin-top: 2%;
+    text-align: center;
+}
+
+.faq-section div h4{
+    font-size: 2.5vw;
+    margin-top: 5%;
+}
+
+.faq-section div form{
+    background: white;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+
+.faq-section div form input, .faq-section div form button{
+    font-size: 2vw;
+    height: 3.5vw;
+    border: none;
+}
+
+.faq-section div form button{
+    /* color: white; */
+    background: rgb(195, 4, 4);
+    cursor: pointer;
+}
+
+.faq-section div form button:hover{
+    background: red;
+}
+
+
+@media screen and (max-width:1300px){
+    .faq-section{
+        height: 80vw;
+    }
+
+    .faq-section h1{
+        font-size: 4vw;
+    }
+
+    .faq-section ul{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 2vw;
+
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .faq-section{
+        height: 95vw;
+    }
+
+    .faq-section ul{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1%;
+        font-size: 2.5vw;
+
+    }
+
+
+    .faq-section div form{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background: none;
+    }
+
+    .faq-section div form input{
+        font-size: 3vw;
+        height: 5vw;
+    }
+
+    .faq-section div form button{
+        width: 40%;
+        font-size: 3vw;
+        display: block;
+        height: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+.footer{
+    width: 100%;
+    height: 20vw;
+    margin-top: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: black;
+    color: rgb(158, 154, 154);
+}
+
+.footer h3, .footer div, .footer select , .footer h4{
+    margin-top: 2%;
+}
+
+.footer div{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+}
+
+.footer div a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer select{
+    background: inherit;
+    font-size: 1vw;
+    color: inherit;
+}
+
+@media screen and (max-width:1300px){
+
+    .footer{
+        height: 40vw;
+        padding: 1vw;
+    }
+
+    .footer div{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 10px;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .footer{
+        height: 100vw;
+        padding-top: 5%;
+    }
+
+    .footer select{
+        margin-top: 10%;
+        font-size: 4vw;
+    }
+}
